@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="display-4 text-white mb-4">Welcome to the Home page</h1>
+    <p class="lead text-white mb-4">Login to go to your secret page. Sign Up if you are a new user.</p>
+    <div>
+        <a href="{{ url_for('login') }}" class="btn btn-light btn-lg me-2">Login</a>
+        <a href="{{ url_for('signup') }}" class="btn btn-outline-light btn-lg">Sign Up</a>
+    </div>
+</div>
+{% endblock %}

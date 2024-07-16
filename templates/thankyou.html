@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <i class="fas fa-check-circle icon-large text-white"></i>
+    <h1 class="display-4 text-white mb-4">Thanks for Registering!</h1>
+    <p class="lead text-white mb-4">Your account has been created successfully. Welcome to our community!</p>
+    
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-3">
+            <i class="fas fa-user-plus feature-icon text-white"></i>
+            <h3 class="text-white">Join</h3>
+            <p class="text-white">Become part of our family</p>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-comments feature-icon text-white"></i>
+            <h3 class="text-white">Connect</h3>
+            <p class="text-white">Engage with others</p>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-rocket feature-icon text-white"></i>
+            <h3 class="text-white">Grow</h3>
+            <p class="text-white">Reach new heights</p>
+        </div>
+    </div>
+    
+    <a href="{{ url_for('login') }}" class="btn btn-light btn-lg mt-4">
+        <i class="fas fa-sign-in-alt me-2"></i>Login Now
+    </a>
+</div>
+{% endblock %}
